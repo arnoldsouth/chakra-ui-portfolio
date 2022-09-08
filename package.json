@@ -2,8 +2,6 @@
   "name": "chakra-ui-portfolio",
   "version": "0.1.0",
   "private": true,
-  // "homepage": "https://arnoldsouth.github.io/chakra-ui-portfolio",
-  "homepage": "http://chakra-ui-portfolio.github.io",
   "dependencies": {
     "@chakra-ui/react": "^2.3.1",
     "@emotion/react": "^11.10.4",
