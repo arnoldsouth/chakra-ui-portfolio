@@ -1,6 +1,6 @@
 .card-swing {
   animation: cardswing ease-in-out 1s infinite alternate;
-  transform-origin: center -20px;
+  transform-origin: center -10px;
 }
 
 .card-swing:hover {
@@ -9,6 +9,10 @@
 
 .arrow-swing {
   animation: arrowswing ease-in-out 1s infinite alternate;
+}
+
+.small-caps {
+  font-variant: small-caps;
 }
 
 @keyframes cardswing {

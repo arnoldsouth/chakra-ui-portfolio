@@ -25,7 +25,7 @@ const About = ({}) => {
   return (
     <>
       <VStack spacing={5}>
-        <motion.div whileHover={{ y: -5, scale: 1.1 }}>
+        <motion.div whileHover={{ y: -2, scale: 1.1 }}>
           <Box
             boxShadow={'xl'}
             _hover={{ boxShadow: 'lg' }}
@@ -39,7 +39,7 @@ const About = ({}) => {
           </Box>
         </motion.div>
         <Heading
-          fontSize={'xl'}
+          fontSize={'2xl'}
           fontFamily={'body'}
           textTransform="capitalize"
           noOfLines={2}
@@ -53,6 +53,7 @@ const About = ({}) => {
           noOfLines={{ base: 3, md: 4 }}
           _groupHover={{ display: 'none' }}
           display="block"
+          className="small-caps"
         >
           {userConfig.author.devType}
         </Text>
@@ -64,6 +65,7 @@ const About = ({}) => {
             noOfLines={{ base: 3, md: 4 }}
             _groupHover={{ display: 'block' }}
             display="none"
+            className="small-caps"
           >
             {userConfig.author.bio}
           </Text>

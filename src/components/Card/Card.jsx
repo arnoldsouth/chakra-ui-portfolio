@@ -48,12 +48,13 @@ const Card = () => {
           ) : (
             <CardReverse />
           )}
+
           <HStack
             position={'absolute'}
             left={'-5px'}
             bottom={0}
-            p={1}
-            py={1}
+            p={3}
+            py={0.5}
             width={'100%'}
             justify={'flex-end'}
             className="arrow-swing"
@@ -61,7 +62,6 @@ const Card = () => {
             <motion.div
               whileHover={{
                 scale: [1, 2, 2, 1, 1],
-                rotate: [0, 0, 270, 270, 0],
                 borderRadius: ['20%', '20%', '50%', '50%', '20%'],
               }}
             >
