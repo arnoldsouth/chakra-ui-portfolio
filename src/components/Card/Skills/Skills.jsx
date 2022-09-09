@@ -17,7 +17,7 @@ import userConfig from '../../../config/userConfig';
 
 // export interface SkillsProps {
 //   name: string;
-//   image: string;
+//   icon: string;
 //   link: string;
 // }
 
@@ -67,7 +67,7 @@ const Skills = ({ name, image, link }) => {
               (
               <Skeleton height={26} width={26} rounded="md" />) : (
               {/* <Image
-                src={userConfig.author.skills.image}
+                src={userConfig.author.skills.icon}
                 height={26}
                 width={26}
                 layout="fixed"
@@ -82,7 +82,7 @@ const Skills = ({ name, image, link }) => {
                   aria-label={skills.label}
                   // size="lg"
                   colorScheme={skills.type}
-                  icon={skills.image}
+                  icon={skills.icon}
                   {...iconProps}
                 />
               ))}
@@ -112,7 +112,7 @@ export default Skills;
 
 Skills.propTypes = {
   name: PropTypes.string,
-  //   image: PropTypes.object,
-  image: PropTypes.any.isRequired,
+  //   icon: PropTypes.object,
+  icon: PropTypes.any.isRequired,
   link: PropTypes.string,
 };

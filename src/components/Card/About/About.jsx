@@ -67,9 +67,7 @@ const About = ({}) => {
             className="small-caps"
           >
             {userConfig.author.bio}
-
             <br />
-
             {userConfig.author.skills.map((skills, index) => (
               <IconButton
                 key={index}
@@ -79,7 +77,7 @@ const About = ({}) => {
                 aria-label={skills.label}
                 // size="lg"
                 colorScheme={skills.type}
-                icon={skills.image}
+                icon={skills.icon}
                 {...iconProps}
               />
             ))}
@@ -88,16 +86,16 @@ const About = ({}) => {
         <Divider />
         <Flex alignItems="center" justify="center" w="100%">
           <Box textAlign="center">
-            {userConfig.author.socials.map((sc, index) => (
+            {userConfig.author.socials.map((socials, index) => (
               <IconButton
                 key={index}
                 as={Link}
                 isExternal
-                href={sc.url}
-                aria-label={sc.label}
+                href={socials.url}
+                aria-label={socials.label}
                 // size="lg"
-                colorScheme={sc.type}
-                icon={sc.icon}
+                colorScheme={socials.type}
+                icon={socials.icon}
                 {...iconProps}
               />
             ))}

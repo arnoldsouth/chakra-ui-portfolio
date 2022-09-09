@@ -20,7 +20,7 @@ const CardReverse = ({}) => {
             <Skills
               key={index}
               name={tool.name}
-              image={tool.image}
+              icon={tool.icon}
               //   platform={'web'}
               link={tool.link}
             />
@@ -35,7 +35,7 @@ const CardReverse = ({}) => {
               aria-label={skills.label}
               // size="lg"
               colorScheme={skills.type}
-              icon={skills.image}
+              icon={skills.icon}
               {...iconProps}
             />
           ))} */}
