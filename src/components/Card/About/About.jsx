@@ -21,7 +21,7 @@ const iconProps = {
   variant: 'ghost',
 };
 
-const About = ({}) => {
+const About = () => {
   return (
     <>
       <VStack spacing={5}>
