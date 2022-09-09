@@ -11,6 +11,10 @@ import {
   SiPostgresql,
 } from 'react-icons/si';
 
+import neuraltheft from '../assets/neuraltheft.jpeg';
+import plshelpcook from '../assets/plshelpcook.jpeg';
+import sneakerpuffery from '../assets/sneakerpuffery.jpeg';
+
 const userConfig = {
   author: {
     name: 'arnold southammavong',
@@ -71,6 +75,29 @@ const userConfig = {
         label: 'postgres',
         type: 'grey',
         icon: <SiPostgresql />,
+      },
+    ],
+    works: [
+      {
+        name: 'neuralTHEFT',
+        link: 'neuraltheft.netlify.com',
+        description: "a stat tracking app for riot games' gamers",
+        image: neuraltheft,
+      },
+      {
+        name: 'plshelpCOOK',
+        link: 'plshelpCOOK.netlify.com',
+        description: 'a recipe finder for cookers, bakers, and eaters',
+        // TODO:
+        image: plshelpcook,
+      },
+      {
+        name: 'sneakerPUFFERY',
+        link: 'sneakerPUFFERY.netlify.com',
+        description:
+          'an ecommerce website for people looking to purchase overpriced sneakers',
+        // TODO:
+        image: sneakerpuffery,
       },
     ],
   },

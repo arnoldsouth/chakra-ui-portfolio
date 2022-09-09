@@ -71,7 +71,7 @@ const Card = () => {
                 w={6}
                 h={6}
                 onClick={() =>
-                  setType(type === 'profile' ? 'skills' : 'profile')
+                  setType(type === 'profile' ? 'works' : 'profile')
                 }
               />
             </motion.div>
