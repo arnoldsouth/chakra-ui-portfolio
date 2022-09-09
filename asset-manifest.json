@@ -1,16 +1,19 @@
 {
   "files": {
     "main.css": "/chakra-ui-portfolio/static/css/main.3c84d55a.css",
-    "main.js": "/chakra-ui-portfolio/static/js/main.a6f75328.js",
+    "main.js": "/chakra-ui-portfolio/static/js/main.d4db4255.js",
     "static/js/787.66e3d226.chunk.js": "/chakra-ui-portfolio/static/js/787.66e3d226.chunk.js",
     "static/media/touka.png": "/chakra-ui-portfolio/static/media/touka.2c97c38108bbd4d192c3.png",
+    "static/media/sneakerpuffery.jpeg": "/chakra-ui-portfolio/static/media/sneakerpuffery.b258f3d9bc244f8b4af6.jpeg",
+    "static/media/plshelpcook.jpeg": "/chakra-ui-portfolio/static/media/plshelpcook.bdfcaa7d4c7190414b55.jpeg",
+    "static/media/neuraltheft.jpeg": "/chakra-ui-portfolio/static/media/neuraltheft.a3da3e3f6df5045ee729.jpeg",
     "index.html": "/chakra-ui-portfolio/index.html",
     "main.3c84d55a.css.map": "/chakra-ui-portfolio/static/css/main.3c84d55a.css.map",
-    "main.a6f75328.js.map": "/chakra-ui-portfolio/static/js/main.a6f75328.js.map",
+    "main.d4db4255.js.map": "/chakra-ui-portfolio/static/js/main.d4db4255.js.map",
     "787.66e3d226.chunk.js.map": "/chakra-ui-portfolio/static/js/787.66e3d226.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3c84d55a.css",
-    "static/js/main.a6f75328.js"
+    "static/js/main.d4db4255.js"
   ]
 }
