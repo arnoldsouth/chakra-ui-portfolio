@@ -7,6 +7,7 @@ import {
   Text,
   Skeleton,
   useColorModeValue,
+  IconButton,
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 // import { usePalette } from 'react-palette';
@@ -20,12 +21,17 @@ import userConfig from '../../../config/userConfig';
 //   link: string;
 // }
 
+const iconProps = {
+  size: 'lg',
+  variant: 'ghost',
+};
+
 const Skills = ({ name, image, link }) => {
   //   const { data, loading, error } = usePalette(image);
 
   return (
     <motion.div variants={item}>
-      <motion.div whileHover={{ y: -5 }}>
+      <motion.div whileHover={{ y: -3 }}>
         <Link href={link} isExternal _hover={{ textDecoration: 'none' }}>
           <VStack
             p={2}
@@ -59,15 +65,27 @@ const Skills = ({ name, image, link }) => {
               ></Box>
               {/* {loading ? ( */}
               (
-              <Skeleton height={26} width={26} rounded="md" />
-              ) : (
-              <Image
+              <Skeleton height={26} width={26} rounded="md" />) : (
+              {/* <Image
                 src={userConfig.author.skills.image}
                 height={26}
                 width={26}
                 layout="fixed"
                 rounded="md"
-              />
+              /> */}
+              {userConfig.author.skills.map((skills, index) => (
+                <IconButton
+                  key={index}
+                  as={Link}
+                  isExternal
+                  href={skills.url}
+                  aria-label={skills.label}
+                  // size="lg"
+                  colorScheme={skills.type}
+                  icon={skills.image}
+                  {...iconProps}
+                />
+              ))}
               )
             </Box>
             <VStack

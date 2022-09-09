@@ -46,7 +46,7 @@ const About = ({}) => {
         >
           {userConfig.author.name}
         </Heading>
-        (
+
         <Text
           color={'gray.500'}
           fontSize="lg"
@@ -57,6 +57,7 @@ const About = ({}) => {
         >
           {userConfig.author.devType}
         </Text>
+
         <Fade in>
           <Text
             color={'gray.500'}
@@ -67,25 +68,11 @@ const About = ({}) => {
             className="small-caps"
           >
             {userConfig.author.bio}
-
-            <br />
-
-            {userConfig.author.skills.map((skills, index) => (
-              <IconButton
-                key={index}
-                as={Link}
-                isExternal
-                href={skills.link}
-                aria-label={skills.label}
-                // size="lg"
-                colorScheme={skills.type}
-                icon={skills.image}
-                {...iconProps}
-              />
-            ))}
           </Text>
         </Fade>
+
         <Divider />
+
         <Flex alignItems="center" justify="center" w="100%">
           <Box textAlign="center">
             {userConfig.author.socials.map((sc, index) => (

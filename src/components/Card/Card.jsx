@@ -29,7 +29,8 @@ const Card = () => {
         className="card-swing"
       >
         <Box
-          maxH={'400px'}
+          // maxH={'400px'}
+          maxH={'450px'}
           minH={'354px'}
           w="345px"
           boxShadow={'lg'}
