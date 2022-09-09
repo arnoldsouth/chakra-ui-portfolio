@@ -109,17 +109,3 @@ const About = ({}) => {
 };
 
 export default About;
-
-// {userConfig.author.skills.map((skills, index) => (
-//   <IconButton
-//     key={index}
-//     as={Link}
-//     isExternal
-//     href={skills.url}
-//     aria-label={skills.label}
-//     // size="lg"
-//     colorScheme={skills.type}
-//     icon={skills.image}
-//     {...iconProps}
-//   />
-// ))}
