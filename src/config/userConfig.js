@@ -19,7 +19,7 @@ const userConfig = {
   author: {
     name: 'arnold southammavong',
     devType: 'full stack developer',
-    bio: 'cpa accountant turned full stack web developer living in the bay area',
+    bio: 'accountant turned full stack web developer living in the bay area',
     socials: [
       {
         url: 'https://www.github.com/arnoldsouth',
