@@ -12,7 +12,7 @@ import {
 } from 'react-icons/si';
 
 import neuraltheft from '../assets/neuraltheft.jpeg';
-import plshelpcook from '../assets/plshelpcook.jpeg';
+import helpmecook from '../assets/helpmecook.jpeg';
 import sneakerpuffery from '../assets/sneakerpuffery.jpeg';
 
 const userConfig = {
@@ -34,7 +34,7 @@ const userConfig = {
         icon: <SiLinkedin />,
       },
       {
-        url: 'https://twitter.com/ajaxrip',
+        url: 'https://twitter.com/arnold_rip',
         label: 'twitter',
         type: 'grey',
         icon: <SiTwitter />,
@@ -79,25 +79,25 @@ const userConfig = {
     ],
     works: [
       {
+        name: 'chowstagram',
+        link: 'https://chowstagram.netlify.app/',
+        description:
+          'a simple photo sharing web app for lovers of dogs and food',
+        // TODO:
+        image: sneakerpuffery,
+      },
+      {
         name: 'neuralTHEFT',
-        link: 'neuraltheft.netlify.com',
+        link: 'https://neuraltheft.netlify.app/',
         description: "a stat tracking app for riot games' gamers",
         image: neuraltheft,
       },
       {
-        name: 'plshelpCOOK',
-        link: 'plshelpCOOK.netlify.com',
+        name: 'helpmeCOOK',
+        link: 'https://helpmecook.netlify.app/',
         description: 'a recipe finder for cookers, bakers, and eaters',
         // TODO:
-        image: plshelpcook,
-      },
-      {
-        name: 'sneakerPUFFERY',
-        link: 'sneakerPUFFERY.netlify.com',
-        description:
-          'an ecommerce website for people looking to purchase overpriced sneakers',
-        // TODO:
-        image: sneakerpuffery,
+        image: helpmecook,
       },
     ],
   },

@@ -30,9 +30,11 @@ const Card = () => {
       >
         <Box
           // maxH={'400px'}
-          maxH={'450px'}
-          minH={'354px'}
-          w="345px"
+          maxH={'500px'}
+          // minH={'354px'}
+          minH={'500px'}
+          // w="345px"
+          w="400px"
           boxShadow={'lg'}
           rounded={'md'}
           p={6}
