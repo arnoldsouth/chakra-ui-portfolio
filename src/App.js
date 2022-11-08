@@ -13,8 +13,9 @@ import {
 import { mode } from '@chakra-ui/theme-tools';
 import { ColorModeSwitcher } from './ColorModeSwitcher';
 
+import './css/style.css';
+
 import Card from './components/Card/Card';
-// import { Logo } from './Logo';
 
 const theme = extendTheme({
   styles: {

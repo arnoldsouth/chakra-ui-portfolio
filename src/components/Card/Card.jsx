@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Box, HStack, Icon, useColorModeValue } from '@chakra-ui/react';
 import { RiArrowRightLine } from 'react-icons/ri';
 import { BiArrowBack } from 'react-icons/bi';
@@ -11,7 +11,7 @@ import '../../css/style.css';
 
 const Card = () => {
   const bg = useColorModeValue('white', '#2f3244');
-  const [type, setType] = React.useState('profile');
+  const [type, setType] = useState('profile');
 
   return (
     <>

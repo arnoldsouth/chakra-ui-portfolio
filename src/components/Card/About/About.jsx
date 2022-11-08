@@ -16,6 +16,8 @@ import { motion } from 'framer-motion';
 import userConfig from '../../../config/userConfig';
 import Touka from '../../../assets/touka.png';
 
+import '../../../css/style.css';
+
 const iconProps = {
   size: 'lg',
   variant: 'ghost',
@@ -23,7 +25,7 @@ const iconProps = {
 
 const About = () => {
   return (
-    <>
+    <div className="font-family">
       <VStack spacing={5}>
         <motion.div whileHover={{ y: -2, scale: 1.1 }}>
           <Box
@@ -40,27 +42,42 @@ const About = () => {
         </motion.div>
         <Heading
           fontSize={'2xl'}
-          fontFamily={'body'}
+          fontFamily={'.body'}
           textTransform="capitalize"
           noOfLines={2}
         >
           {userConfig.author.name}
         </Heading>
-        (
+
         <Text
-          color={'gray.500'}
-          fontSize="lg"
+          color={'gray.400'}
+          fontSize="xl"
           noOfLines={{ base: 3, md: 4 }}
           _groupHover={{ display: 'none' }}
           display="block"
           className="small-caps"
         >
           {userConfig.author.devType}
+          <br />
+          {userConfig.author.skills.map((skills, index) => (
+            <IconButton
+              key={index}
+              as={Link}
+              isExternal
+              href={skills.link}
+              aria-label={skills.label}
+              // size="lg"
+              colorScheme={skills.type}
+              icon={skills.icon}
+              {...iconProps}
+            />
+          ))}
+          <br />
         </Text>
         <Fade in>
           <Text
-            color={'gray.500'}
-            fontSize="lg"
+            color={'gray.400'}
+            fontSize="xl"
             noOfLines={{ base: 3, md: 4 }}
             _groupHover={{ display: 'block' }}
             display="none"
@@ -68,22 +85,13 @@ const About = () => {
           >
             {userConfig.author.bio}
             <br />
-            {userConfig.author.skills.map((skills, index) => (
-              <IconButton
-                key={index}
-                as={Link}
-                isExternal
-                href={skills.link}
-                aria-label={skills.label}
-                // size="lg"
-                colorScheme={skills.type}
-                icon={skills.icon}
-                {...iconProps}
-              />
-            ))}
+            <br />
+            <br />
           </Text>
         </Fade>
+
         <Divider />
+        <br />
         <Flex alignItems="center" justify="center" w="100%">
           <Box textAlign="center">
             {userConfig.author.socials.map((socials, index) => (
@@ -102,7 +110,7 @@ const About = () => {
           </Box>
         </Flex>
       </VStack>
-    </>
+    </div>
   );
 };
 
