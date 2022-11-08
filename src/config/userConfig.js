@@ -57,7 +57,7 @@ const userConfig = {
       },
       {
         name: 'reactjs',
-        link: 'https://www.typescriptlang.org/',
+        link: 'https://www.reactjs.org/',
         label: 'reactjs',
         type: 'grey',
         icon: <SiReact />,
