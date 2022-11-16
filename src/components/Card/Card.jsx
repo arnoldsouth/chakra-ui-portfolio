@@ -26,7 +26,7 @@ const Card = () => {
         height="max-content"
         width="max-content"
         margin="auto"
-        className="card-swing"
+        // className="card-swing"
       >
         <Box
           // maxH={'400px'}

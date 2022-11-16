@@ -24,10 +24,10 @@ const Works = ({ name, link, image }) => {
         <Link href={link} isExternal _hover={{ textDecoration: 'none' }}>
           <VStack
             p={2}
-            bg={useColorModeValue('white', 'gray.800')}
+            bg={useColorModeValue('gray.300', 'gray.800')}
             rounded="xl"
             borderWidth="1px"
-            borderColor={useColorModeValue('gray.100', 'gray.700')}
+            borderColor={useColorModeValue('gray.300', '#181923')}
             w="100%"
             // h="100%"
             textAlign="left"

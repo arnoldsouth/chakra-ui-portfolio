@@ -50,7 +50,7 @@ const About = () => {
         </Heading>
 
         <Text
-          color={'gray.400'}
+          color={'gray'}
           fontSize="xl"
           noOfLines={{ base: 3, md: 4 }}
           _groupHover={{ display: 'none' }}
@@ -76,7 +76,7 @@ const About = () => {
         </Text>
         <Fade in>
           <Text
-            color={'gray.400'}
+            color={'gray'}
             fontSize="xl"
             noOfLines={{ base: 3, md: 4 }}
             _groupHover={{ display: 'block' }}
@@ -91,6 +91,7 @@ const About = () => {
         </Fade>
 
         <Divider />
+
         <br />
         <Flex alignItems="center" justify="center" w="100%">
           <Box textAlign="center">
